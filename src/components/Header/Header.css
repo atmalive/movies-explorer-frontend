@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 74px;
+    background-color: #DDDEE3;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 70px 10px 70px;
+    box-sizing: border-box;
+}
+.header__logo {
+    margin: 0;
+}
+.header__page-names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.header__page-title {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.35;
+    color: #000000;
+    margin: 0 16px 0 0;
+}
+.header__page-name {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.35;
+    color: #000000;
+    margin: 0;
+}
+.header__user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.header__user {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.35;
+    align-items: center;
+    color: #000000;
+    margin: 0 30px 0 0;
+}
+.header__button {
+    background: #3456F3;
+    border-radius: 3px;
+    width: 76px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}

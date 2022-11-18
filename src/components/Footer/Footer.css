@@ -51,6 +51,17 @@
     text-align: right;
     color: #000000;
     text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.footer__link:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+.footer__link:active {
+    transform: scale(0.99);
+    font-size: 14px;
+    opacity: 1;
 }
 .footer__yandex-praktikum {
     margin: 0 20px;

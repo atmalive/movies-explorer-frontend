@@ -75,8 +75,15 @@
     background: #E8E8E8;
     border-radius: 10px;
     margin: 0 10px 0 0;
+    transition: 0.2s;
 }
+.techs__card:hover {
+    transform: scale(1.05);
+    opacity: 80%;
+}
+
 .techs__card:last-child {
     max-width: 45px;
+    cursor: wait;
     margin: 0;
 }

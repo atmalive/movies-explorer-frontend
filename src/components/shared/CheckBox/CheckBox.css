@@ -1,0 +1,50 @@
+.search__checkbox:not(checked) {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+.search__checkbox:not(checked) + .search__label-text {
+    position: relative;
+    padding: 0 0 0 51px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #000000;
+    transition: 0.2s;
+}
+.search__checkbox:not(checked) + .search__label-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 20px;
+    background: #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: .2s;
+}
+.search__checkbox:not(checked) + .search__label-text:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: #FFF;
+    transition: .2s;
+}
+.search__checkbox:checked + .search__label-text:before {
+    background: #2BE080;
+}
+.search__checkbox:checked + .search__label-text:after {
+    left: 17px;
+    background: #F5F5F5;
+}
+.search__label-text:hover {
+    transform: scale(1.05);
+    opacity: 80%;
+}

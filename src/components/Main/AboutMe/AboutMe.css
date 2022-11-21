@@ -66,6 +66,15 @@
     color: #000000;
     margin: 0;
     text-decoration: none;
+    transition: 0.2s;
+}
+.about-me__github:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+.about-me__github:active {
+    transform: scale(0.99);
+    opacity: 1;
 }
 .about-me__i-am {
     max-width: 270px;
@@ -107,6 +116,21 @@
     height: 100%;
     margin: 0;
     text-decoration: none;
+    transition: 0.2s;
+}
+.about-me__link:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+.about-me__link:active {
+    transform: scale(0.99);
+    opacity: 1;
+}
+.about-me__i-am {
+    max-width: 270px;
+    max-height: 327px;
+    border-radius: 10px;
+    margin: 0;
 }
 .about-me__page:last-child {
     border: none;

@@ -6,25 +6,12 @@
     background-color: #DDDEE3;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 0;
     padding: 10px 70px 10px 70px;
     box-sizing: border-box;
 }
 .header_is-user {
     background-color: #FAFAFA;
-}
-.header__logo {
-    display: block;
-    max-width: 38px;
-    max-height: 38px;
-    cursor: pointer;
-    margin: 0;
-    object-fit: cover;
-    transition: 0.2s;
-}
-.header__logo:hover {
-    transform: scale(1.05);
-    opacity: 80%;
 }
 .header__page-names {
     display: flex;
@@ -118,7 +105,11 @@
     opacity: 1;
 }
 .header__account {
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #000000;
+    margin: 0 12px 0 0;
 }
 .header__user {
     display: flex;
@@ -126,8 +117,7 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    background: url('../../images/headeruser.svg') no-repeat center;
-    background-color: #F4F4F4;
+    background: #F4F4F4 url('../../images/headeruser.svg') no-repeat center;
 }
 
 .header__page-title_active {

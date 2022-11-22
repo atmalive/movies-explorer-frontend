@@ -9,7 +9,9 @@
 }
 
 .root {
-    width: 95vw; overflow-x:hidden;
+    max-width: 100%;
+    width: 99.4vw;
+    overflow-x:hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

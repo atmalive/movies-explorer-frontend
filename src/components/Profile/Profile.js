@@ -15,7 +15,6 @@ export const Profile = () => {
                     <label className="profile__label">
                         E-mail <input type="text" className="profile__input" label="E-mail" />
                     </label>
-
                     <button className="profile__button">Редактировать</button>
                 </form>
                 <Link className="profile__link" to={'/'}>

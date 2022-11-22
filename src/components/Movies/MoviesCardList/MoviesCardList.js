@@ -8,6 +8,8 @@ export const MoviesCardList = () => {
             <MovieCard />
             <MovieCard />
             <MovieCard />
+            <MovieCard />
+            <MovieCard />
         </div>
     );
 };

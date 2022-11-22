@@ -1,13 +1,12 @@
 import './Auth.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import {Logo} from "../shared/Logo/Logo";
+import { Logo } from '../shared/Logo/Logo';
 
 export const Auth = ({ title, button, regText, link, linkText }) => {
     const location = useLocation();
     const navigate = useNavigate();
 
     const isLocationSignIn = location.pathname === '/signin';
-
 
     const onClickButton = () => {
         if (isLocationSignIn) {
@@ -18,7 +17,7 @@ export const Auth = ({ title, button, regText, link, linkText }) => {
     return (
         <section className="auth">
             <div className="auth__container">
-                <Logo/>
+                <Logo />
                 <h1 className="auth__title">{title}</h1>
                 <form action="" className="auth__form">
                     {!isLocationSignIn ? (

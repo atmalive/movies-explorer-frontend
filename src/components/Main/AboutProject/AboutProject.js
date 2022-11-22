@@ -4,7 +4,6 @@ export const AboutProject = () => {
     return (
         <section className="about-project">
             <h2 className="about-project__project">О проекте</h2>
-            <div className="about-project__line"></div>
             <div className="about-project__info">
                 <div className="about-project__about">
                     <h3 className="about-project__title">Дипломный проект включал 5 этапов</h3>

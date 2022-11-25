@@ -106,3 +106,39 @@
     color: #A0A0A0;
     margin: 10px 0 0 0;
 }
+
+@media screen and (max-width: 769px) {
+    .about-project {
+        margin: 0;
+        padding: 92px 50px 25px 50px;
+    }
+    .about-project__project {
+        line-height: 1.1;
+        margin: 0 0 22px 0;
+        border: 1px solid #000000;
+    }
+    .about-project__info {
+        margin: 0 0 94px 0;
+    }
+    .about-project__about {
+        margin: 0 0 0 5.9%;
+    }
+    .about-project__about:first-child {
+        margin: 0;
+    }
+    .about-project__title {
+        letter-spacing: -0.8px;
+        margin: 0 0 21px 0;
+    }
+    .about-project__text {
+        font-size: 12px;
+        line-height: 1.45;
+    }
+    .about-project__deadline {
+        grid-template-columns: 140px 1fr;
+        margin: 0 0 60px 0;
+    }
+    .about-project__four-week {
+        width: 100%;
+    }
+}

@@ -123,3 +123,9 @@
 .header__page-title_active {
     font-weight: 500;
 }
+
+@media screen and (max-width: 769px) {
+    .header {
+        padding: 10px 29px 10px 29px;
+    }
+}

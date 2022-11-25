@@ -25,7 +25,6 @@ export const Logo = () => {
         } else if (isLocationSignin || isLocationSignup) {
             className += ' logo_auth';
         }
-        console.log(className);
         return className;
     };
 
@@ -35,8 +34,9 @@ export const Logo = () => {
             myPromise.then(() => {
                 scrollToElement('.about-project');
             });
+        } else {
+            scrollToElement('.about-project');
         }
-        scrollToElement('.about-project');
     };
     return <img onClick={onClick} className={getClass()} src={logo} alt="Логотип практикума" />;
 };

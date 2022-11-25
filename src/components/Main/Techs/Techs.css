@@ -87,3 +87,32 @@
     cursor: wait;
     margin: 0;
 }
+@media screen and (max-width: 769px) {
+    .techs {
+        padding: 91px 50px 90px 50px;
+    }
+    .techs__section {
+        font-size: 22px;
+        line-height: 1.22;
+        margin: 0 0 22px 0;
+    }
+    .techs__info {
+        padding: 80px 0 0 0;
+    }
+    .techs__title {
+        font-size: 50px;
+        line-height: 1.2;
+        margin: 0 0 21px 0;
+    }
+    .techs__text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0 0 83px 0;
+    }
+    .techs__cards {
+        padding: 0;
+    }
+    .techs__card:last-child {
+        max-width: 42px;
+    }
+}

@@ -1,4 +1,4 @@
-import imgfilm from '../../../images/examplefilm.png';
+import imgfilm from '../../../images/examplefilm.webp';
 import './MovieCard.css';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';

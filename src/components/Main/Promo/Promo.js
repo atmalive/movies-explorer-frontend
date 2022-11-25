@@ -1,5 +1,5 @@
 import './Promo.css';
-import mainLogo from '../../../images/main-logo.png';
+import mainLogo from '../../../images/main-logo.webp';
 import { scrollToElement } from '../../../utils/scrollToElement';
 
 export const Promo = () => {

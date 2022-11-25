@@ -18,7 +18,7 @@ export const AboutMe = () => {
                         Github
                     </a>
                 </div>
-                <img className="about-me__i-am" src={avatar} alt="я" />
+                <img className="about-me__img" src={avatar} alt="я" />
             </div>
             <h4 className="about-me__portfolio-subtitles">Портфолио</h4>
             <ul className="about-me__portfolio">

@@ -89,3 +89,9 @@
     background: rgba(52, 86, 243, 0.8);
     animation: preloader-inside-red 1s ease-in-out infinite;
 }
+
+@media screen and (max-width: 769px) {
+    .preloader {
+        padding-bottom: 100px;
+    }
+}

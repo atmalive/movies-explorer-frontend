@@ -10,3 +10,12 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+@media screen and (max-width: 769px) {
+    .movies__list {
+        grid-template-columns: repeat(auto-fill, 339px);
+        column-gap: 30px;
+        row-gap: 30px;
+        padding: 5px 0 0 0;
+    }
+}

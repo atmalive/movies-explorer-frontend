@@ -119,7 +119,6 @@
     height: 30px;
     background: #F4F4F4 url('../../images/headeruser.svg') no-repeat center;
 }
-
 .header__page-title_active {
     font-weight: 500;
 }
@@ -127,5 +126,14 @@
 @media screen and (max-width: 769px) {
     .header {
         padding: 10px 29px 10px 29px;
+    }
+    .header__page-names {
+        display: none;
+    }
+    .header__account {
+        display: none;
+    }
+    .header__user {
+        display: none;
     }
 }

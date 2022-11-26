@@ -16,6 +16,6 @@
         grid-template-columns: repeat(auto-fill, 339px);
         column-gap: 30px;
         row-gap: 30px;
-        padding: 5px 0 0 0;
+        padding: 0;
     }
 }

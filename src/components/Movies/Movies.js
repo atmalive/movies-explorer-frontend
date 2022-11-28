@@ -3,6 +3,7 @@ import { Preloader } from './Preloader/Preloader';
 import { SearchForm } from './SearchForm/SearchForm';
 import './Movies.css';
 import { useState } from 'react';
+import {BurgerMenu} from "../BurgerMenu/BurgerMenu";
 //todo сделать Прелоадер
 
 export const Movies = () => {
@@ -16,6 +17,7 @@ export const Movies = () => {
 
     return (
         <section className="movies">
+            <BurgerMenu/>
             <SearchForm />
             {movies ? <MoviesCardList /> : <Preloader />}
             {movies ? (

@@ -7,12 +7,23 @@ import { Login } from '../Auth/Login/Login';
 import { Register } from '../Auth/Register/Register';
 import { ErrorPage } from '../ErrorPage/ErrorPage';
 import { Layout } from '../Layout/Layout';
+import { useState } from 'react';
 
 export const App = () => {
+    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+
+    const closeMenu = () => {
+        setIsBurgerMenuOpen(false);
+    };
+    const openMenu = () => {
+        setIsBurgerMenuOpen(true);
+    };
+
+    console.log(isBurgerMenuOpen);
     return (
         <>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<Layout openMenu={openMenu} isBurgerMenuOpen={isBurgerMenuOpen} closeMenu={closeMenu} />}>
                     <Route index element={<Main />} />
                     <Route path="movies" element={<Movies />} />
                     <Route path="saved-movies" element={<SavedMovies />} />

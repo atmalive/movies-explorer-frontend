@@ -1,8 +1,10 @@
-import {NavLink, useLocation} from "react-router-dom";
-import React from "react";
+import { NavLink, useLocation } from 'react-router-dom';
+import React from 'react';
+import './NavigationLink.css';
 
+export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
+    // todo прокинуть из header и из burgerMenu пропсы с классами
 
-export const NavigationLink = () => {
     const location = useLocation();
     const isLocationProfile = location.pathname === '/profile';
     const isLocationMovies = location.pathname === '/movies';
@@ -10,11 +12,30 @@ export const NavigationLink = () => {
     return (
         <>
             {!isLocationUser ? (
-                <div className="header__page-names">
-                    <NavLink to={'/movies'} className={`header__page-title ${isLocationMovies ? 'header__page-title_active' : ''}`}>
+                <div className={isBurgerMenuOpen ? 'navlink__page-names_burger' : 'navlink__page-names'}>
+                    <NavLink
+                        onClick={closeMenu}
+                        to={'/'}
+                        className={`navlink__page-title navlink__page-title_deactiv ${isBurgerMenuOpen ? ' navlink__page-title_burger' : ''}`}
+                    >
+                        Главная
+                    </NavLink>
+                    <NavLink
+                        onClick={closeMenu}
+                        to={'/movies'}
+                        className={`navlink__page-title ${isLocationMovies ? 'navlink__page-title_active' : ''}${
+                            isBurgerMenuOpen ? ' navlink__page-title_burger' : ''
+                        }`}
+                    >
                         Фильмы
                     </NavLink>
-                    <NavLink to={'/saved-movies'} className={`header__page-name ${!isLocationMovies ? 'header__page-title_active' : ''}`}>
+                    <NavLink
+                        onClick={closeMenu}
+                        to={'/saved-movies'}
+                        className={`navlink__page-title ${!isLocationMovies ? 'navlink__page-title_active' : ''}${
+                            isBurgerMenuOpen ? ' navlink__page-title_burger' : ''
+                        }`}
+                    >
                         Сохраненные фильмы
                     </NavLink>
                 </div>
@@ -22,26 +43,35 @@ export const NavigationLink = () => {
                 ''
             )}
 
-            <div className="header__user-info">
+            <div className={isBurgerMenuOpen ? 'navlink__user-info_burger' : 'navlink__user-info'}>
                 {!isLocationUser ? (
                     <>
-                        <NavLink to={'/profile'} className={`header__register header__account ${isLocationProfile ? 'header__page-title_active' : ''}`}>
+                        <NavLink
+                            onClick={closeMenu}
+                            to={'/profile'}
+                            className={`navlink__register navlink__account ${isLocationProfile ? 'navlink__page-title_active' : ''}${
+                                !isBurgerMenuOpen ? ' navlink__account_deactivate' : ''
+                            }`}
+                        >
                             Aккаунт
                         </NavLink>
-                        <NavLink to={'/profile'} className="header__signin header__user"></NavLink>
+                        <NavLink
+                            onClick={closeMenu}
+                            to={'/profile'}
+                            className={`navlink__signin navlink__user ${!isBurgerMenuOpen ? ' navlink__account_deactivate' : ''}`}
+                        ></NavLink>
                     </>
                 ) : (
                     <>
-                        <NavLink to={'/signup'} className="header__register">
+                        <NavLink to={'/signup'} className="navlink__register">
                             Регистрация
                         </NavLink>
-                        <NavLink to={'/signin'} className="header__signin">
+                        <NavLink to={'/signin'} className="navlink__signin">
                             Войти
                         </NavLink>
                     </>
                 )}
             </div>
-
         </>
-    )
-}
+    );
+};

@@ -1,25 +1,10 @@
-.header {
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    min-height: 74px;
-    background-color: #DDDEE3;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 10px 70px 10px 70px;
-    box-sizing: border-box;
-}
-.header_is-user {
-    background-color: #FAFAFA;
-}
-.header__page-names {
+.navlink__page-names {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
-.header__page-title {
+.navlink__page-title {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.35;
@@ -28,15 +13,15 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.header__page-title:hover {
+.navlink__page-title:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.header__page-title:active {
+.navlink__page-title:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.header__page-name {
+.navlink__page-name {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.35;
@@ -45,21 +30,22 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.header__page-name:hover {
+.navlink__page-name:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.header__page-name:active {
+.navlink__page-name:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.header__user-info {
+
+.navlink__user-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
-.header__register {
+.navlink__register {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.35;
@@ -69,15 +55,15 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.header__register:hover {
+.navlink__register:hover {
     transform: scale(1.05);
     opacity: 0.7;
 }
-.header__register:active {
+.navlink__register:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.header__signin {
+.navlink__signin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,22 +82,22 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.header__signin:hover {
+.navlink__signin:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.header__signin:active {
+.navlink__signin:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.header__account {
+.navlink__account {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     color: #000000;
     margin: 0 12px 0 0;
 }
-.header__user {
+.navlink__user {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,35 +105,56 @@
     height: 30px;
     background: #F4F4F4 url('../../images/headeruser.svg') no-repeat center;
 }
-.header__page-title_active {
+.navlink__page-title_active {
     font-weight: 500;
 }
-.header__burger-button {
-    display: none;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin: 0 10px 0 0;
-    background: #F4F4F4 url('../../images/button768.svg') no-repeat center;
-}
-
 
 @media screen and (max-width: 769px) {
-    .header {
-        padding: 10px 29px 10px 29px;
-    }
-    .header__page-names {
+    .navlink__page-names {
         display: none;
     }
-    .header__account {
-        display: none;
-    }
-    .header__user {
-        display: none;
-    }
-    .header__burger-button_active {
+    .navlink__user-info {
         display: flex;
     }
+    .navlink__register {
+        display: flex;
+    }
+    .navlink__signin {
+        display: flex;
+    }
+    .navlink__page-title_active {
+        border-bottom: 1px solid #000;
+    }
+    .navlink__account_deactivate {
+        display: none;
+    }
+    }
+    .navlink__page-title_deactiv {
+        display: none;
+}
+
+.navlink__page-names_burger {
+    display: flex;
+    width: 70%;
+    max-height: 130px;
+    height: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.navlink__page-title_burger {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.navlink__user-info_burger {
+    display: flex;
+    align-items: center;
 }

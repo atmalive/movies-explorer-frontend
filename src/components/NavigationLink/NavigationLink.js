@@ -3,7 +3,6 @@ import React from 'react';
 import './NavigationLink.css';
 
 export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
-    // todo прокинуть из header и из burgerMenu пропсы с классами
 
     const location = useLocation();
     const isLocationProfile = location.pathname === '/profile';

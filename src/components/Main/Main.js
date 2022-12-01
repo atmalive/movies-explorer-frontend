@@ -5,11 +5,11 @@ import { AboutMe } from './AboutMe/AboutMe';
 
 export const Main = () => {
     return (
-        <>
+        <main>
             <Promo />
             <AboutProject />
             <Techs />
             <AboutMe />
-        </>
+        </main>
     );
 };

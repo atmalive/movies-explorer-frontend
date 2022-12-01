@@ -19,7 +19,6 @@ export const App = () => {
         setIsBurgerMenuOpen(true);
     };
 
-    console.log(isBurgerMenuOpen);
     return (
         <>
             <Routes>

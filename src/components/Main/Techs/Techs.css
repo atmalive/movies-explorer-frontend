@@ -61,15 +61,17 @@
     list-style-type: none;
 }
 .techs__card {
-    display: flex;
+    /*display: flex;*/
     width: 90px;
     height: 60px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.22;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding-top: 21px;
+    box-sizing: border-box;
     letter-spacing: -0.04em;
     color: #000000;
     background: #E8E8E8;
@@ -86,6 +88,9 @@
     max-width: 45px;
     cursor: wait;
     margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 @media screen and (max-width: 769px) {
     .techs {

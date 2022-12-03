@@ -10,7 +10,7 @@ export const Layout = ({ openMenu, isBurgerMenuOpen, closeMenu }) => {
     return (
         <>
             <BurgerMenu isBurgerMenuOpen={isBurgerMenuOpen} closeMenu={closeMenu} />
-            <Header openMenu={openMenu} isBurgerMenuOpen={isBurgerMenuOpen} />
+            <Header openMenu={openMenu} isBurgerMenuOpen={isBurgerMenuOpen} closeMenu={closeMenu} />
             <Outlet />
             {!isLocationProfile ? <Footer /> : ''}
         </>

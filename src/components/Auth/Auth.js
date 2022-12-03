@@ -1,12 +1,15 @@
 import './Auth.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Logo } from '../shared/Logo/Logo';
+import { ValidationForm } from '../../utils/ValidationForm';
 
 export const Auth = ({ title, button, regText, link, linkText }) => {
     const location = useLocation();
     const navigate = useNavigate();
 
     const isLocationSignIn = location.pathname === '/signin';
+
+    let err = ValidationForm();
 
     const onClickButton = () => {
         if (isLocationSignIn) {
@@ -23,16 +26,19 @@ export const Auth = ({ title, button, regText, link, linkText }) => {
                     {!isLocationSignIn ? (
                         <label className="auth__label">
                             {' '}
-                            Имя <input type="text" className="auth__input" label="Имя" />
+                            Имя <input type="text" className="auth__input" label="Имя" name="name" />
+                            <span className="auth__err auth__err_name_name">{err}</span>
                         </label>
                     ) : (
                         ''
                     )}
                     <label className="auth__label">
-                        E-mail <input type="text" className="auth__input" label="E-mail" />
+                        E-mail <input type="text" className="auth__input" label="E-mail" name="email" />
+                        <span className="auth__err auth__err_name_email">{err}</span>
                     </label>
                     <label className="auth__label">
-                        Пароль <input type="password" className="auth__input auth__input_password" label="Пароль" />
+                        Пароль <input type="password" className="auth__input auth__input_password" label="Пароль" name="password" />
+                        <span className="auth__err auth__err_name_password">{err}</span>
                     </label>
                     <button onClick={onClickButton} className="auth__button">
                         {button}

@@ -12,11 +12,22 @@ import { useState } from 'react';
 export const App = () => {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
+    const resizeThrottler = () => {
+        if (window.innerWidth >= 790) {
+            setTimeout(function setTime() {
+                setIsBurgerMenuOpen(false);
+            }, 0);
+        }
+    };
+
     const closeMenu = () => {
         setIsBurgerMenuOpen(false);
+        window.removeEventListener('resize', resizeThrottler, false);
     };
+
     const openMenu = () => {
         setIsBurgerMenuOpen(true);
+        window.addEventListener('resize', resizeThrottler, false);
     };
 
     return (

@@ -3,7 +3,6 @@ import React from 'react';
 import './NavigationLink.css';
 
 export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
-
     const location = useLocation();
     const isLocationProfile = location.pathname === '/profile';
     const isLocationMovies = location.pathname === '/movies';

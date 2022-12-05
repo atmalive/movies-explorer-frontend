@@ -40,12 +40,15 @@ export const AboutMe = () => {
                 {int.map((item, i) => (
                     <li className="about-me__page" key={i}>
                         <a className="about-me__link" href="https://atmalive.github.io/Travel-rs.school/" target="_blank" rel="noopener noreferrer">
-                            <span className="about-me__page-link">{i.text}</span>
+                            <span className="about-me__page-link">{item.text}</span>
                             <svg className="about-me__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
                                 <path
                                     fill="#000"
                                     d="m2.607 16.524 12.357-12.38-.02 9.546h2.322V.182H3.778l-.02 2.301h9.545L.945 14.863l1.662 1.661Z"
                                 />
+                            </svg>
+                            <svg className="about-me__svg320" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
+                                <path fill="#000" d="m1.564 10.714-.997-.997L7.982 2.29H2.254L2.267.91h8.092v8.104H8.966l.013-5.727-7.415 7.427Z" />
                             </svg>
                         </a>
                     </li>

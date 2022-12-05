@@ -73,3 +73,35 @@
         padding: 60px 30px 20px 30px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .footer {
+        padding: 60px 10px 10px;
+    }
+    .footer__subtitles {
+        font-size: 12px;
+    }
+
+    .footer__yandex {
+        flex-direction: column-reverse;
+        padding: 29px 0 0 0;
+    }
+    .footer__copyright {
+        font-size: 12px;
+        line-height: 1.2;
+         color: #A0A0A0;
+    }
+    .footer__links {
+        flex-direction: column;
+        margin: 0 0 30px 0;
+    }
+    .footer__link {
+        font-size: 12px;
+
+    }
+    .footer__yandex-praktikum {
+        margin: 0 0 8px 0;
+
+    }
+
+}

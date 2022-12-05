@@ -91,7 +91,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 898px) {
     .movie__container {
         max-width: 339px;
         min-height: 262px;
@@ -103,5 +103,16 @@
     .movie__text-save {
         padding: 14px 20px 0 14px;
         margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .movie__container {
+        max-width: 300px;
+        min-height: 237px;
+    }
+    .movie__picture {
+        max-width: 300px;
+        max-height: 168px;
     }
 }

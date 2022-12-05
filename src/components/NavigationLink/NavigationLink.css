@@ -158,3 +158,21 @@
     display: flex;
     align-items: center;
 }
+@media screen and (max-width: 450px) {
+    .navlink__register {
+        font-size: 10px;
+        margin: 0 14px 0 0;
+    }
+    .navlink__signin {
+        font-size: 10px;
+        width: 54px;
+        height: 26px;
+    }
+    .navlink__account {
+        font-size: 14px;
+    }
+    .navlink__user {
+        width: 30px;
+        height: 30px;
+     }
+}

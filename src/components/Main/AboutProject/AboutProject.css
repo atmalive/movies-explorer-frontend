@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 auto;
+    margin: 0;
     padding: 110px 70px 25px 70px;
     box-sizing: border-box;
 }
@@ -129,7 +129,7 @@
     }
     .about-project__title {
         letter-spacing: -0.8px;
-        margin: 0 0 21px 0;
+        margin: 0 0 23px 0;
     }
     .about-project__text {
         font-size: 12px;
@@ -141,5 +141,59 @@
     }
     .about-project__four-week {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-project {
+        display: flex;
+        width: 100%;
+        padding: 72px 18px 68px;
+    }
+    .about-project__deadline {
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 29px 29px;
+        margin: 0;
+    }
+    .about-project__project {
+        font-size: 18px;
+        letter-spacing: -0.04em;
+        margin: 0 0 28px 0;
+    }
+    .about-project__info {
+        flex-direction: column;
+        margin: 0 0 61px 0;
+        padding: 62px 0 0 0;
+        border-top: 1px solid #000000;
+    }
+    .about-project__about:first-child {
+        margin: 0 0 56px 0;
+    }
+    .about-project__about {
+        margin: 0 0 0 0;
+    }
+    .about-project__title {
+        font-size: 18px;
+        letter-spacing: -0.04em;
+        margin: 0 0 17px;
+    }
+    .about-project__text {
+        font-size: 11px;
+    }
+    .about-project__one-week {
+        font-size: 11px;
+        max-width: 100%;
+    }
+    .about-project__four-week {
+        font-size: 11px;
+        max-width: 100%;
+    }
+    .about-project__backend {
+        font-size: 11px;
+        max-width: 100%;
+    }
+    .about-project__front-end {
+        font-size: 11px;
+        max-width: 100%;
     }
 }

@@ -31,3 +31,13 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: 10px 14px;
+    }
+    .header__burger-button {
+        margin: 0 5px 0 0;
+        background: #F4F4F4 url('../../images/button320.svg') no-repeat center;
+    }
+}

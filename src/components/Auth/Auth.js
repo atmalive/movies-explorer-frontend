@@ -26,18 +26,18 @@ export const Auth = ({ title, button, regText, link, linkText }) => {
                     {!isLocationSignIn ? (
                         <label className="auth__label">
                             {' '}
-                            Имя <input type="text" className="auth__input" label="Имя" name="name" />
+                            Имя <input type="text" className="auth__input" label="Имя" name="name" minLength="3" required />
                             <span className="auth__err auth__err_name_name">{err}</span>
                         </label>
                     ) : (
                         ''
                     )}
                     <label className="auth__label">
-                        E-mail <input type="text" className="auth__input" label="E-mail" name="email" />
+                        E-mail <input type="text" className="auth__input" label="E-mail" name="email" minLength="3" required/>
                         <span className="auth__err auth__err_name_email">{err}</span>
                     </label>
                     <label className="auth__label">
-                        Пароль <input type="password" className="auth__input auth__input_password" label="Пароль" name="password" />
+                        Пароль <input type="password" className="auth__input auth__input_password" label="Пароль" minLength="6" name="password" required/>
                         <span className="auth__err auth__err_name_password">{err}</span>
                     </label>
                     <button onClick={onClickButton} className="auth__button">

@@ -12,11 +12,11 @@ export const Profile = () => {
                 <h1 className="profile__title">Привет, Виталий!</h1>
                 <form action="" className="profile__form">
                     <label className="profile__label">
-                        Имя <input type="text" className="profile__input" label="Имя" />
+                        Имя <input type="text" className="profile__input" label="Имя" minLength="3" required/>
                         {/*<span className="profile__err profile__err_name_name">{err}</span>*/}
                     </label>
                     <label className="profile__label">
-                        E-mail <input type="text" className="profile__input" label="E-mail" />
+                        E-mail <input type="text" className="profile__input" label="E-mail" minLength="3" required/>
                         {/*<span className="profile__err profile__err_name_email">{err}</span>*/}
                     </label>
                     <button className="profile__button">Редактировать</button>

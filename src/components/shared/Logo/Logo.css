@@ -23,5 +23,8 @@
 
 
 @media screen and (max-width: 450px) {
-
+    .logo_auth {
+        align-self: center;
+        margin: 0 0 50px 0;
+    }
 }

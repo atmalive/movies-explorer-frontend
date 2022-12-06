@@ -48,3 +48,11 @@
     transform: scale(1.05);
     opacity: 80%;
 }
+
+@media screen and (max-width: 450px) {
+    .search__checkbox:not(checked) + .search__label-text {
+        padding: 3px 0 0 51px;
+        font-size: 11px;
+    }
+
+}

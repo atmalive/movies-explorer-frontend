@@ -3,9 +3,10 @@ import { Preloader } from './Preloader/Preloader';
 import { SearchForm } from './SearchForm/SearchForm';
 import './Movies.css';
 import { useState } from 'react';
+import {MoviesLoader} from "./MoviesLoader/MoviesLoader";
 
 export const Movies = () => {
-    const [showMoviesList, setShowMoviesList] = useState(false);
+    const [isShowMoviesList, setShowMoviesList] = useState(false);
 
     const changeState = () => {
         setShowMoviesList(true);
@@ -16,14 +17,8 @@ export const Movies = () => {
     return (
         <section className="movies">
             <SearchForm />
-            {showMoviesList ? <MoviesCardList /> : <Preloader />}
-            {showMoviesList ? (
-                <div className="movies__loader">
-                    <button className="movies__loader-button">Ещё</button>
-                </div>
-            ) : (
-                ''
-            )}
+            {isShowMoviesList ? <MoviesCardList /> : <Preloader />}
+            <MoviesLoader isShowMoviesList={isShowMoviesList}/>
         </section>
     );
 };

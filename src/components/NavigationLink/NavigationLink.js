@@ -6,6 +6,7 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
     const location = useLocation();
     const isLocationProfile = location.pathname === '/profile';
     const isLocationMovies = location.pathname === '/movies';
+    const isLocationSavedMovies = location.pathname === '/saved-movies';
     const isLocationUser = location.pathname === '/';
     return (
         <>
@@ -30,7 +31,7 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                     <NavLink
                         onClick={closeMenu}
                         to={'/saved-movies'}
-                        className={`navlink__page-title ${!isLocationMovies ? 'navlink__page-title_active' : ''}${
+                        className={`navlink__page-title ${isLocationSavedMovies ? 'navlink__page-title_active' : ''}${
                             isBurgerMenuOpen ? ' navlink__page-title_burger' : ''
                         }`}
                     >

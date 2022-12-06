@@ -124,6 +124,7 @@
     }
     .navlink__page-title_active {
         border-bottom: 1px solid #000;
+        line-height: 1.6;
     }
     .navlink__account_deactivate {
         display: none;
@@ -136,8 +137,9 @@
 .navlink__page-names_burger {
     display: flex;
     width: 70%;
-    max-height: 130px;
-    height: 40%;
+    max-height: 125px;
+    min-height: 120px;
+    height: 42%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -147,7 +149,6 @@
     display: flex;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.6;
     text-align: center;
     text-decoration: none;
     margin: 0;
@@ -157,6 +158,7 @@
 .navlink__user-info_burger {
     display: flex;
     align-items: center;
+
 }
 @media screen and (max-width: 450px) {
     .navlink__register {

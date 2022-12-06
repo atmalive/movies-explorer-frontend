@@ -1,11 +1,10 @@
-import { MoviesCardList } from './MoviesCardList/MoviesCardList';
-import { Preloader } from './Preloader/Preloader';
-import { SearchForm } from './SearchForm/SearchForm';
-import './Movies.css';
+import { SearchForm } from '../Movies/SearchForm/SearchForm';
+import { MoviesCardList } from '../Movies/MoviesCardList/MoviesCardList';
+import { MoviesLoader } from '../Movies/MoviesLoader/MoviesLoader';
+import { Preloader } from '../Movies/Preloader/Preloader';
 import { useState } from 'react';
-import {MoviesLoader} from "./MoviesLoader/MoviesLoader";
 
-export const Movies = () => {
+export const SavedMovies = () => {
     const [isShowMoviesList, setShowMoviesList] = useState(false);
 
     const changeState = () => {
@@ -18,7 +17,7 @@ export const Movies = () => {
         <section className="movies">
             <SearchForm />
             {isShowMoviesList ? <MoviesCardList /> : <Preloader />}
-            <MoviesLoader isShowMoviesList={isShowMoviesList}/>
+            <MoviesLoader />
         </section>
     );
 };

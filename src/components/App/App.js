@@ -1,13 +1,7 @@
-import { Main } from '../Main/Main';
 import { Route, Routes } from 'react-router-dom';
-import { Movies } from '../Movies/Movies';
-import { SavedMovies } from '../SavedMovies/SavedMovies';
-import { Profile } from '../Profile/Profile';
-import { Login } from '../Auth/Login/Login';
-import { Register } from '../Auth/Register/Register';
-import { ErrorPage } from '../ErrorPage/ErrorPage';
 import { Layout } from '../Layout/Layout';
 import { useState } from 'react';
+import { Login, Movies, PageNotFound, Profile, Register, SavedMovies, Main } from '../../pages';
 
 export const App = () => {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -41,7 +35,7 @@ export const App = () => {
                 </Route>
                 <Route path="/signin" element={<Login />} />
                 <Route path="/signup" element={<Register />} />
-                <Route path="*" element={<ErrorPage />} />
+                <Route path="*" element={<PageNotFound />} />
             </Routes>
         </>
     );

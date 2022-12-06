@@ -1,6 +1,6 @@
 import './Auth.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Logo } from '../shared/Logo/Logo';
+import { Logo } from '../../components/shared/Logo/Logo';
 import { ValidationForm } from '../../utils/ValidationForm';
 
 export const Auth = ({ title, button, regText, link, linkText }) => {
@@ -22,7 +22,7 @@ export const Auth = ({ title, button, regText, link, linkText }) => {
             <div className="auth__container">
                 <Logo />
                 <h1 className="auth__title">{title}</h1>
-                <form action="" className="auth__form">
+                <form action="Auth" className="auth__form">
                     {!isLocationSignIn ? (
                         <label className="auth__label">
                             {' '}
@@ -33,11 +33,12 @@ export const Auth = ({ title, button, regText, link, linkText }) => {
                         ''
                     )}
                     <label className="auth__label">
-                        E-mail <input type="text" className="auth__input" label="E-mail" name="email" minLength="3" required/>
+                        E-mail <input type="text" className="auth__input" label="E-mail" name="email" minLength="3" required />
                         <span className="auth__err auth__err_name_email">{err}</span>
                     </label>
                     <label className="auth__label">
-                        Пароль <input type="password" className="auth__input auth__input_password" label="Пароль" minLength="6" name="password" required/>
+                        Пароль{' '}
+                        <input type="password" className="auth__input auth__input_password" label="Пароль" minLength="6" name="password" required />
                         <span className="auth__err auth__err_name_password">{err}</span>
                     </label>
                     <button onClick={onClickButton} className="auth__button">

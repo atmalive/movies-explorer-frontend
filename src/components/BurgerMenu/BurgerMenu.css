@@ -50,7 +50,7 @@
     box-sizing: border-box;
     border: none;
     right: 26px;
-    top: 23px;
+    top: 25px;
     background: url('../../images/close.svg') no-repeat center;
     transition: 0.2s;
     cursor: pointer;

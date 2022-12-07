@@ -69,8 +69,11 @@
     padding: 15px;
     margin: 10px 0 0 0;
 }
-.auth__input_password {
+.auth__input:invalid {
     color: #EE3465;
+}
+.auth__input:valid {
+    background: #f2f6f2;
 }
 .auth__button {
     width: 100%;

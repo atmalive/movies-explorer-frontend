@@ -1,10 +1,10 @@
-.navlink__page-names {
+.navlink-pages_page-names {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
-.navlink__page-title {
+.navlink-pages__page-title {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.35;
@@ -13,15 +13,15 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.navlink__page-title:hover {
+.navlink-pages__page-title:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.navlink__page-title:active {
+.navlink-pages__page-title:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.navlink__page-name {
+.navlink-pages__page-name {
     font-weight: 400;
     font-size: 13px;
     line-height: 1.35;
@@ -30,22 +30,22 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.navlink__page-name:hover {
+.navlink-pages__page-name:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.navlink__page-name:active {
+.navlink-pages__page-name:active {
     transform: scale(0.99);
     opacity: 1;
 }
 
-.navlink__user-info {
+.navlink-profile_user-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
-.navlink__register {
+.navlink-profile__register {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.35;
@@ -55,15 +55,15 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.navlink__register:hover {
+.navlink-profile__register:hover {
     transform: scale(1.05);
     opacity: 0.7;
 }
-.navlink__register:active {
+.navlink-profile__register:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.navlink__signin {
+.navlink-profile__signin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,22 +82,22 @@
     text-decoration: none;
     transition: 0.2s;
 }
-.navlink__signin:hover {
+.navlink-profile__signin:hover {
     transform: scale(1.02);
     opacity: 0.8;
 }
-.navlink__signin:active {
+.navlink-profile__signin:active {
     transform: scale(0.99);
     opacity: 1;
 }
-.navlink__account {
+.navlink-profile__account {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     color: #000000;
     margin: 0 12px 0 0;
 }
-.navlink__user {
+.navlink-profile__user {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,36 +105,43 @@
     height: 30px;
     background: #F4F4F4 url('../../images/headeruser.svg') no-repeat center;
 }
-.navlink__page-title_active {
+.navlink-pages__page-title_active {
+    font-weight: 500;
+}
+.navlink-profile__title-active {
     font-weight: 500;
 }
 
 @media screen and (max-width: 769px) {
-    .navlink__page-names {
+    .navlink-pages_page-names {
         display: none;
     }
-    .navlink__user-info {
+    .navlink-profile_user-info {
         display: flex;
     }
-    .navlink__register {
+    .navlink-profile__register {
         display: flex;
     }
-    .navlink__signin {
+    .navlink-profile__signin {
         display: flex;
     }
-    .navlink__page-title_active {
+    .navlink-pages__page-title_active {
         border-bottom: 1px solid #000;
         line-height: 1.6;
     }
-    .navlink__account_deactivate {
+    .navlink-profile__title-active {
+        border-bottom: 1px solid #000;
+        line-height: 1.6;
+    }
+    .navlink-profile__account-deactivate {
         display: none;
     }
     }
-    .navlink__page-title_deactiv {
+
+    .navlink-pages__page-title_deactiv {
         display: none;
 }
-
-.navlink__page-names_burger {
+.navlink-pages_page-names-burger {
     display: flex;
     width: 70%;
     max-height: 125px;
@@ -145,7 +152,7 @@
     align-items: center;
     box-sizing: border-box;
 }
-.navlink__page-title_burger {
+.navlink-pages__page-title_burger {
     display: flex;
     font-weight: 500;
     font-size: 18px;
@@ -155,25 +162,25 @@
     padding: 0;
     color: #000000;
 }
-.navlink__user-info_burger {
+.navlink-profile_user-info-burger {
     display: flex;
     align-items: center;
 
 }
 @media screen and (max-width: 450px) {
-    .navlink__register {
+    .navlink-profile__register {
         font-size: 10px;
         margin: 0 14px 0 0;
     }
-    .navlink__signin {
+    .navlink-profile__signin {
         font-size: 10px;
         width: 54px;
         height: 26px;
     }
-    .navlink__account {
+    .navlink-profile__account {
         font-size: 14px;
     }
-    .navlink__user {
+    .navlink-profile__user {
         width: 30px;
         height: 30px;
      }

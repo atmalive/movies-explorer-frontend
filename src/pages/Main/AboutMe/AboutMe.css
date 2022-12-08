@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 .about-me__title {
     font-weight: 400;
@@ -200,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .about-me {
         padding: 71px 14px 70px;
     }
@@ -218,8 +218,7 @@
     }
     .about-me__info {
         flex-direction: column;
-        /*align-items: center;*/
-
+        margin: 0;
     }
     .about-me__img {
         max-width: 292px;

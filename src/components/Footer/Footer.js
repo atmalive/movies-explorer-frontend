@@ -2,7 +2,7 @@ import './Footer.css';
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <h5 className="footer__subtitles">Учебный проект Яндекс.Практикум х BeatFilm.</h5>
             <div className="footer__yandex">
                 <p className="footer__copyright">© 2022</p>
@@ -19,6 +19,6 @@ export const Footer = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     );
 };

@@ -1,4 +1,4 @@
-.movie__container {
+.movie {
     display: flex;
     width: 100%;
     max-width: 364px;
@@ -93,11 +93,11 @@
 
 @media screen and (max-width: 898px) {
     .movie__container {
-        max-width: 339px;
+        max-width: 336px;
         min-height: 262px;
     }
     .movie__picture {
-        max-width: 339px;
+        max-width: 336px;
         max-height: 190px;
     }
     .movie__text-save {

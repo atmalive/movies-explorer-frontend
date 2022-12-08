@@ -3,12 +3,12 @@ import { CheckBox } from '../../../components/shared/CheckBox/CheckBox';
 
 export const SearchForm = () => {
     return (
-        <div className="search">
+        <section className="search">
             <form className="search__form" action="Movies/SearchForm">
-                <input className="search__input" type="text" placeholder="Фильм" />
+                <input className="search__input" type="text" placeholder="Фильм" required/>
                 <button className="search__button">Поиск</button>
             </form>
             <CheckBox text="Короткометражки" />
-        </div>
+        </section>
     );
 };

@@ -12,10 +12,10 @@ export const Header = ({ openMenu, isBurgerMenuOpen }) => {
     const isLocationUser = location.pathname === '/';
 
     return (
-        <div className={`header ${!isLocationUser ? 'header_is-user' : ''}`}>
+        <header className={`header ${!isLocationUser ? 'header_is-user' : ''}`}>
             <Logo />
             {!isBurgerMenuOpen && <NavigationLink isBurgerMenuOpen={isBurgerMenuOpen} />}
             <button onClick={openMenu} className={`header__burger-button ${!isLocationUser ? 'header__burger-button_active' : ''}`}></button>
-        </div>
+        </header>
     );
 };

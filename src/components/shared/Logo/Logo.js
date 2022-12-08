@@ -1,4 +1,4 @@
-import logo from '../../../images/logo.webp';
+import logo from '../../../images/logo.svg';
 import './Logo.css';
 import React from 'react';
 import { scrollToElement } from '../../../utils/scrollToElement';

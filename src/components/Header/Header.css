@@ -21,7 +21,7 @@
     width: 30px;
     height: 30px;
     margin: 0 10px 0 0;
-    background: #F4F4F4 url('../../images/button768.svg') no-repeat center;
+    background: url('../../images/button768.svg') no-repeat center;
 }
 @media screen and (max-width: 769px) {
     .header {
@@ -38,6 +38,6 @@
     }
     .header__burger-button {
         margin: 0 5px 0 0;
-        background: #F4F4F4 url('../../images/button320.svg') no-repeat center;
+        background: url('../../images/button320.svg') no-repeat center;
     }
 }

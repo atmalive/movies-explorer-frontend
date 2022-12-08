@@ -11,19 +11,19 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
     return (
         <>
             {!isLocationUser ? (
-                <div className={isBurgerMenuOpen ? 'navlink__page-names_burger' : 'navlink__page-names'}>
+                <div className={`navlink-pages ${isBurgerMenuOpen ? 'navlink-pages_page-names-burger' : 'navlink-pages_page-names'}`}>
                     <NavLink
                         onClick={closeMenu}
                         to={'/'}
-                        className={`navlink__page-title navlink__page-title_deactiv ${isBurgerMenuOpen ? ' navlink__page-title_burger' : ''}`}
+                        className={`navlink-pages__page-title navlink-pages__page-title_deactiv ${isBurgerMenuOpen ? ' navlink-pages__page-title_burger' : ''}`}
                     >
                         Главная
                     </NavLink>
                     <NavLink
                         onClick={closeMenu}
                         to={'/movies'}
-                        className={`navlink__page-title ${isLocationMovies ? 'navlink__page-title_active' : ''}${
-                            isBurgerMenuOpen ? ' navlink__page-title_burger' : ''
+                        className={`navlink-pages__page-title ${isLocationMovies ? 'navlink-pages__page-title_active' : ''}${
+                            isBurgerMenuOpen ? ' navlink-pages__page-title_burger' : ''
                         }`}
                     >
                         Фильмы
@@ -31,8 +31,8 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                     <NavLink
                         onClick={closeMenu}
                         to={'/saved-movies'}
-                        className={`navlink__page-title ${isLocationSavedMovies ? 'navlink__page-title_active' : ''}${
-                            isBurgerMenuOpen ? ' navlink__page-title_burger' : ''
+                        className={`navlink-pages__page-title ${isLocationSavedMovies ? 'navlink-pages__page-title_active' : ''}${
+                            isBurgerMenuOpen ? ' navlink-pages__page-title_burger' : ''
                         }`}
                     >
                         Сохраненные фильмы
@@ -42,14 +42,14 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                 ''
             )}
 
-            <div className={isBurgerMenuOpen ? 'navlink__user-info_burger' : 'navlink__user-info'}>
+            <div className={`navlink-profile ${isBurgerMenuOpen ? 'navlink-profile_user-info-burger' : 'navlink-profile_user-info'}`}>
                 {!isLocationUser ? (
                     <>
                         <NavLink
                             onClick={closeMenu}
                             to={'/profile'}
-                            className={`navlink__register navlink__account ${isLocationProfile ? 'navlink__page-title_active' : ''}${
-                                !isBurgerMenuOpen ? ' navlink__account_deactivate' : ''
+                            className={`navlink-profile__register navlink-profile__account ${isLocationProfile ? 'navlink-profile__title-active' : ''}${
+                                !isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''
                             }`}
                         >
                             Aккаунт
@@ -57,15 +57,15 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                         <NavLink
                             onClick={closeMenu}
                             to={'/profile'}
-                            className={`navlink__signin navlink__user ${!isBurgerMenuOpen ? ' navlink__account_deactivate' : ''}`}
+                            className={`navlink-profile__signin navlink-profile__user ${!isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''}`}
                         ></NavLink>
                     </>
                 ) : (
                     <>
-                        <NavLink to={'/signup'} className="navlink__register">
+                        <NavLink to={'/signup'} className="navlink-profile__register">
                             Регистрация
                         </NavLink>
-                        <NavLink to={'/signin'} className="navlink__signin">
+                        <NavLink to={'/signin'} className="navlink-profile__signin">
                             Войти
                         </NavLink>
                     </>

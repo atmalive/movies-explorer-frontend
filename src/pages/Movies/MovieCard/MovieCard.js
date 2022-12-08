@@ -14,7 +14,7 @@ export const MovieCard = () => {
     const isLocationMovies = location.pathname === '/saved-movies';
 
     return (
-        <div className="movie__container">
+        <div className="movie">
             <img src={imgfilm} alt={'film'} className="movie__picture" />
             <div className="movie__text-save">
                 <h2 className="movie__text">Пролетая над кустом петрушки</h2>

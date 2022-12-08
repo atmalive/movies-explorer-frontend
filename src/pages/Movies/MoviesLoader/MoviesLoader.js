@@ -4,5 +4,5 @@ export const MoviesLoader = () => {
     const location = useLocation();
     const isLocationSavedMovies = location.pathname === '/saved-movies';
 
-    return <div className="movies__loader">{!isLocationSavedMovies ? <button className="movies__loader-button">Ещё</button> : ''}</div>;
+    return <section className="movies__loader">{!isLocationSavedMovies ? <button className="movies__loader-button">Ещё</button> : ''}</section>;
 };

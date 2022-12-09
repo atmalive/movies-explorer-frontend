@@ -1,0 +1,32 @@
+@import url('./vendor/font/inter.css');
+@import url('./vendor/normalize.css');
+
+/** {*/
+/*    border: 0.1px solid red;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.body {
+    background-color: #FAFAFA;
+    font-family: "Inter", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*overflow-x:hidden;*/
+}
+
+.root {
+    max-width: 100%;
+    min-width: 320px;
+    width: 99.4vw;
+    /*overflow-x:hidden;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+    .root {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 74px;
+    background-color: #DDDEE3;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 70px 10px 70px;
+    box-sizing: border-box;
+}
+.header_is-user {
+    background-color: #FAFAFA;
+}
+.header__burger-button {
+    display: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    background: url('../../images/button768.svg') no-repeat center;
+}
+@media screen and (max-width: 769px) {
+    .header {
+        padding: 10px 29px 10px 29px;
+    }
+    .header__burger-button_active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: 10px 14px;
+    }
+    .header__burger-button {
+        margin: 0 5px 0 0;
+        background: url('../../images/button320.svg') no-repeat center;
+    }
+}

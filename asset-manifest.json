@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.f2ffe67f.css",
-    "main.js": "./static/js/main.ddc6aea8.js",
-    "static/media/Inter-Medium.woff": "./static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
-    "static/media/Inter-Regular.woff": "./static/media/Inter-Regular.8c206db99195777c6769.woff",
-    "static/media/Inter-Medium.woff2": "./static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
-    "static/media/Inter-Regular.woff2": "./static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
-    "static/media/avatar.webp": "./static/media/avatar.7c6d059ab12cedd82759.webp",
-    "static/media/main-logo.webp": "./static/media/main-logo.af84e8e888a7cf49a28a.webp",
-    "static/media/examplefilm.webp": "./static/media/examplefilm.cab08648b7e5e38e22da.webp",
-    "static/media/logo.svg": "./static/media/logo.e453e2893c39b3111b6f62170411312e.svg",
-    "static/media/headeruser.svg": "./static/media/headeruser.b0b9ff8611bb3c5caf8d.svg",
-    "static/media/iconunsave.svg": "./static/media/iconunsave.06f92cf9a04142e4539d.svg",
-    "index.html": "./index.html",
-    "static/media/button320.svg": "./static/media/button320.5809d10ad3912248b881.svg",
-    "static/media/icondelete.svg": "./static/media/icondelete.d4c5dc9500ab332135dd.svg",
-    "static/media/iconsave.svg": "./static/media/iconsave.8481cdda6178dd21eef4.svg",
-    "static/media/close.svg": "./static/media/close.765a7a6bc7642e4cf1d9.svg",
-    "static/media/button768.svg": "./static/media/button768.fdf57ee3c49efad33f55.svg",
-    "main.f2ffe67f.css.map": "./static/css/main.f2ffe67f.css.map",
-    "main.ddc6aea8.js.map": "./static/js/main.ddc6aea8.js.map"
+    "main.css": "/static/css/main.e52fc1b8.css",
+    "main.js": "/static/js/main.9a9c81cb.js",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/avatar.webp": "/static/media/avatar.7c6d059ab12cedd82759.webp",
+    "static/media/main-logo.webp": "/static/media/main-logo.af84e8e888a7cf49a28a.webp",
+    "static/media/examplefilm.webp": "/static/media/examplefilm.cab08648b7e5e38e22da.webp",
+    "static/media/logo.svg": "/static/media/logo.e453e2893c39b3111b6f62170411312e.svg",
+    "static/media/headeruser.svg": "/static/media/headeruser.b0b9ff8611bb3c5caf8d.svg",
+    "static/media/iconunsave.svg": "/static/media/iconunsave.06f92cf9a04142e4539d.svg",
+    "index.html": "/index.html",
+    "static/media/button320.svg": "/static/media/button320.5809d10ad3912248b881.svg",
+    "static/media/icondelete.svg": "/static/media/icondelete.d4c5dc9500ab332135dd.svg",
+    "static/media/iconsave.svg": "/static/media/iconsave.8481cdda6178dd21eef4.svg",
+    "static/media/close.svg": "/static/media/close.765a7a6bc7642e4cf1d9.svg",
+    "static/media/button768.svg": "/static/media/button768.fdf57ee3c49efad33f55.svg",
+    "main.e52fc1b8.css.map": "/static/css/main.e52fc1b8.css.map",
+    "main.9a9c81cb.js.map": "/static/js/main.9a9c81cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2ffe67f.css",
-    "static/js/main.ddc6aea8.js"
+    "static/css/main.e52fc1b8.css",
+    "static/js/main.9a9c81cb.js"
   ]
 }

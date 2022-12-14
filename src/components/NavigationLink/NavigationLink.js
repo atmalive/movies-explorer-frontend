@@ -15,7 +15,9 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                     <NavLink
                         onClick={closeMenu}
                         to={'/'}
-                        className={`navlink-pages__page-title navlink-pages__page-title_deactiv ${isBurgerMenuOpen ? ' navlink-pages__page-title_burger' : ''}`}
+                        className={`navlink-pages__page-title navlink-pages__page-title_deactiv ${
+                            isBurgerMenuOpen ? ' navlink-pages__page-title_burger' : ''
+                        }`}
                     >
                         Главная
                     </NavLink>
@@ -48,16 +50,18 @@ export const NavigationLink = ({ isBurgerMenuOpen, closeMenu }) => {
                         <NavLink
                             onClick={closeMenu}
                             to={'/profile'}
-                            className={`navlink-profile__register navlink-profile__account ${isLocationProfile ? 'navlink-profile__title-active' : ''}${
-                                !isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''
-                            }`}
+                            className={`navlink-profile__register navlink-profile__account ${
+                                isLocationProfile ? 'navlink-profile__title-active' : ''
+                            }${!isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''}`}
                         >
                             Aккаунт
                         </NavLink>
                         <NavLink
                             onClick={closeMenu}
                             to={'/profile'}
-                            className={`navlink-profile__signin navlink-profile__user ${!isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''}`}
+                            className={`navlink-profile__signin navlink-profile__user ${
+                                !isBurgerMenuOpen ? ' navlink-profile__account-deactivate' : ''
+                            }`}
                         ></NavLink>
                     </>
                 ) : (

@@ -12,7 +12,6 @@ export const MovieCard = ({ data }) => {
         setIsSaved(!isSaved);
     };
 
-    console.log(changeMinToHourMin(duration));
     const { hour, minutes } = changeMinToHourMin(duration);
     const location = useLocation();
     const isLocationMovies = location.pathname === '/saved-movies';
@@ -30,7 +29,7 @@ export const MovieCard = ({ data }) => {
                 ></button>
             </div>
             <span className="movie__time">{`${hour}ч ${minutes}мин`}</span>
-            <a className="movie__link" href={trailerLink}  target='_blank' rel="noopener" />
+            <a className="movie__link" href={trailerLink} target="_blank" rel="noopener" />
         </div>
     );
 };

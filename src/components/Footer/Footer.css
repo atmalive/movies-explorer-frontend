@@ -5,8 +5,9 @@
     flex-direction: column;
     background-color: #F8F8F8;
     justify-content: space-between;
+    justify-self: end;
     align-items: center;
-    margin: 0;
+    margin: auto 0 0 0;
     padding: 79px 70px 20px 70px;
     box-sizing: border-box;
 }

@@ -1,37 +1,32 @@
 import { MoviesCardList } from './MoviesCardList/MoviesCardList';
-import { Preloader } from './Preloader/Preloader';
 import { SearchForm } from './SearchForm/SearchForm';
 import './Movies.css';
-import { useEffect, useState } from 'react';
-import { MoviesLoader } from './MoviesLoader/MoviesLoader';
+import { useState } from 'react';
 import { getMovies } from '../../utils/MoviesApi';
 
 export const Movies = () => {
     const [inputData, setInputData] = useState('');
     const [checkBox, setCheckBox] = useState(false);
     const [beatFilmData, setBeatFilmData] = useState([]);
-    const [isShowMoviesList, setShowMoviesList] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [isSearch, setIsSearch] = useState(false);
     const [movies, setMovies] = useState([]);
 
     const filterData = (e) => {
         e.preventDefault();
+        setIsSearch(true);
         let newFilmsData = beatFilmData.filter((str) => {
             return str.nameRU.toLowerCase().includes(inputData.toLowerCase());
         });
         setMovies(newFilmsData);
+        setIsLoading(true);
     };
-
     const getMoviesList = async () => {
+        setIsLoading(true);
         const data = await getMovies();
+        setIsLoading(false);
         setBeatFilmData(data);
-        console.log(data.length);
     };
-
-    useEffect(() => {
-        if (beatFilmData.length) {
-            setShowMoviesList(true);
-        }
-    }, [beatFilmData]);
 
     return (
         <section className="movies">
@@ -44,8 +39,7 @@ export const Movies = () => {
                 filterData={filterData}
                 beatFilmData={beatFilmData}
             />
-            {isShowMoviesList ? <MoviesCardList movies={movies} /> : <Preloader />}
-            <MoviesLoader isShowMoviesList={isShowMoviesList} />
+            <MoviesCardList beatFilmData={beatFilmData} movies={movies} isLoading={isLoading} isSearch={isSearch} />
         </section>
     );
 };

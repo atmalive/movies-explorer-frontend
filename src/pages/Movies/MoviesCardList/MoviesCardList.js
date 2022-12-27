@@ -3,20 +3,19 @@ import './MoviesCardList.css';
 import { MoviesLoader } from '../MoviesLoader/MoviesLoader';
 import { Preloader } from '../Preloader/Preloader';
 
-export const MoviesCardList = ({ movies, beatFilmData, isLoading, isSearch }) => {
-    console.log(beatFilmData);
+export const MoviesCardList = ({ sliceMovies, isLoading, isSearch, moviesArrSlice, filteredMovies, quantityMoviesShow }) => {
     return (
         <>
-            {!isLoading || movies.length ? (
+            {!isLoading || sliceMovies.length ? (
                 <div className="movies__list">
-                    {movies.map((data) => {
+                    {sliceMovies.map((data) => {
                         return <MovieCard data={data} key={data.id} />;
                     })}
                 </div>
             ) : (
-                <Preloader movies={movies} isSearch={isSearch} />
+                <Preloader sliceMovies={sliceMovies} isSearch={isSearch} />
             )}
-            <MoviesLoader />
+            {quantityMoviesShow >= filteredMovies.length ? '' : <MoviesLoader moviesArrSlice={moviesArrSlice} />}
         </>
     );
 };

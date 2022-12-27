@@ -6,22 +6,20 @@ import { Login, Movies, PageNotFound, Profile, Register, SavedMovies, Main } fro
 export const App = () => {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
-    const resizeThrottler = () => {
+    const handleBurger = () => {
         if (window.innerWidth >= 790) {
             setTimeout(function setTime() {
                 setIsBurgerMenuOpen(false);
             }, 0);
         }
     };
-
     const closeMenu = () => {
         setIsBurgerMenuOpen(false);
-        window.removeEventListener('resize', resizeThrottler, false);
+        window.removeEventListener('resize', handleBurger, false);
     };
-
     const openMenu = () => {
         setIsBurgerMenuOpen(true);
-        window.addEventListener('resize', resizeThrottler, false);
+        window.addEventListener('resize', handleBurger, false);
     };
 
     return (

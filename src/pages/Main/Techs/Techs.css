@@ -84,14 +84,14 @@
     opacity: 80%;
 }
 
-/*.techs__card:last-child {*/
-/*    max-width: 45px;*/
-/*    cursor: wait;*/
-/*    margin: 0;*/
-/*    overflow: hidden;*/
-/*    white-space: nowrap;*/
-/*    text-overflow: ellipsis;*/
-/*}*/
+.techs__card:last-child {
+    max-width: 45px;
+    cursor: wait;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 @media screen and (max-width: 836px) {
     .techs {
         padding: 91px 50px 90px 50px;

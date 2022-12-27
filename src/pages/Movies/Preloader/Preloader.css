@@ -63,7 +63,7 @@
     height: 100px;
     position: absolute;
     top: 10%;
-    left: calc(50% - 70px);
+    left: calc(50% - 60px);
     background: rgba(52, 135, 243, 0.4);
     border-radius: 50px;
 }

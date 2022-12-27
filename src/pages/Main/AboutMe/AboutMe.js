@@ -39,7 +39,7 @@ export const AboutMe = () => {
             <ul className="about-me__portfolio">
                 {int.map((item, i) => (
                     <li className="about-me__page" key={i}>
-                        <a className="about-me__link" href="https://atmalive.github.io/Travel-rs.school/" target="_blank" rel="noopener noreferrer">
+                        <a className="about-me__link" href={item.href} target="_blank" rel="noopener noreferrer">
                             <span className="about-me__page-link">{item.text}</span>
                             <svg className="about-me__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
                                 <path

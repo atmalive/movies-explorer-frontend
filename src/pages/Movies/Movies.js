@@ -45,19 +45,19 @@ export const Movies = () => {
 
     // todo разнести filter, checkbox и кнопку на три функции
 
-    const filterData = () => {
-        lengthMovies();
-        setIsSearch(true);
-        const newFilmsData = beatFilmData.filter((str) => {
-            return str.nameRU.toLowerCase().includes(inputData.toLowerCase()) || str.nameEN.toLowerCase().includes(inputData.toLowerCase());
-        });
-        const shortFilm = newFilmsData.filter((str) => {
-            return isChecked ? str.duration <= 40 : str.duration;
-        });
-        setFilteredMovies(shortFilm);
-        setIsLoading(true);
-        setSliceMovies(shortFilm.slice(0, quantityMoviesShow));
-    };
+    // const filterData = () => {
+    //     lengthMovies();
+    //     setIsSearch(true);
+    //     const newFilmsData = beatFilmData.filter((str) => {
+    //         return str.nameRU.toLowerCase().includes(inputData.toLowerCase()) || str.nameEN.toLowerCase().includes(inputData.toLowerCase());
+    //     });
+    //     const shortFilm = newFilmsData.filter((str) => {
+    //         return isChecked ? str.duration <= 40 : str.duration;
+    //     });
+    //     setFilteredMovies(shortFilm);
+    //     setIsLoading(true);
+    //     setSliceMovies(shortFilm.slice(0, quantityMoviesShow));
+    // };
 
     const getMoviesList = async () => {
         lengthMovies();
@@ -109,7 +109,7 @@ export const Movies = () => {
                 showFirst={showFirst}
                 beatFilmData={beatFilmData}
                 isChecked={isChecked}
-                setIsChecked={setIsChecked}                                                                                                                                                                                                                                                                         
+                setIsChecked={setIsChecked}
             />
             <MoviesCardList
                 sliceMovies={sliceMovies}
